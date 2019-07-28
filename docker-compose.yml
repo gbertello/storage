@@ -1,0 +1,14 @@
+version: '3.5'
+services:
+  node_test:
+    container_name: storage_node_prod
+    build: node/
+    ports:
+      - 80:80
+    volumes:
+      - "./storage:/app/storage"
+    networks:
+      - prod
+networks:
+  prod:
+    driver: bridge
