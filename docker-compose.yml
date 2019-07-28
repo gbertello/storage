@@ -3,6 +3,7 @@ services:
   node_test:
     container_name: storage_node_prod
     build: node/
+    restart: always
     ports:
       - 80:80
     volumes:
