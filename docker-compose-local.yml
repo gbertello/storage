@@ -1,15 +1,14 @@
 version: '3'
 services:
   node_test:
-    container_name: storage_node_prod
+    container_name: storage_node_local
     build: node/
-    restart: always
     ports:
-      - 80:80
+      - 82:80
     volumes:
       - "./storage:/app/storage"
     networks:
-      - prod
+      - local
 networks:
-  prod:
+  local:
     driver: bridge
