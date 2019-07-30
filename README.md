@@ -4,7 +4,7 @@ This repository aims at storing files on a web server and retrieve them with a d
 
 ## Environments
 
-This application is made of 3 environments:
+This application can be deployed in 3 environments:
 
 ### Local
 
@@ -29,3 +29,7 @@ Usage: `./run.sh`
 The production environment is used for final deployment to real users. It does not stop the containers after use. To stop them run the script `./shut-down.sh`.
 
 The port used for accessing the application is 80. The network used is "prod". An environment variable ENV is set with the value "prod".
+
+## Dependencies
+
+Docker needs to be installed on the host machine.
