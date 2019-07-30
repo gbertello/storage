@@ -1,6 +1,8 @@
 # storage
 
-This repository aims at storing files on a web server and retrieve them with a direct URL without the usage of any cloud provider.
+This repository aims at storing files on a web server and retrieve them with a direct URL without the usage of any cloud provider. A "storage" folder will be created at deployment time. All the files to be served have to be inserted in this folder. To retrieve a file called "test.txt" in the storage folder, the URL to be used is
+
+`http://www.your-host.com/storage/test.txt`
 
 ## Environments
 
