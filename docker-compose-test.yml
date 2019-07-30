@@ -5,10 +5,12 @@ services:
     build: node/
     ports:
       - 81:80
-    volumes:
-      - "./storage:/app/storage"
+    environment:
+      - ENV=test
     networks:
       - test
+    volumes:
+      - "./storage:/app/storage"
 networks:
   test:
     driver: bridge

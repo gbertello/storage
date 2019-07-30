@@ -6,10 +6,12 @@ services:
     restart: always
     ports:
       - 80:80
-    volumes:
-      - "./storage:/app/storage"
+    environment:
+      - ENV=prod
     networks:
       - prod
+    volumes:
+      - "./storage:/app/storage"
 networks:
   prod:
     driver: bridge
