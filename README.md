@@ -32,4 +32,4 @@ The port used for accessing the application is 80. The network used is "prod". A
 
 ## Dependencies
 
-Docker needs to be installed on the host machine.
+Docker needs to be installed on the host machine for development or deployment purposes.
