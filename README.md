@@ -12,7 +12,7 @@ This application can be deployed in 3 environments:
 
 Usage: `./run-local.sh`
 
-The local environment is used for testing container in isolations. It launches the containers to be tested, run the tests and shuts down the containers after use. A specific test container is created to run the tests.
+The local environment is used for testing container in isolations. It launches the containers to be tested, deploys the virtual test servers if any, shuts down the containers after use. A specific test container is created to run the tests.
 
 The port used for accessing the application is 82. The network used is "local". An environment variable ENV is set with the value "local".
 
