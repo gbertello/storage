@@ -8,7 +8,7 @@ This application is made of 3 environments:
 
 ### Local
 
-Usage: ./run-local.sh
+Usage: `./run-local.sh`
 
 The local environment is used for testing container in isolations. It launches the containers to be tested, run the tests and shuts down the containers after use. A specific test container is created to run the tests.
 
