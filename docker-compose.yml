@@ -1,6 +1,6 @@
 version: '3'
 services:
-  node_test:
+  node_prod:
     container_name: storage_node_prod
     build: node/
     restart: always
