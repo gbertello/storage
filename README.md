@@ -16,16 +16,16 @@ The port used for accessing the application is 82. The network used is "local". 
 
 ### Test
 
-Usage: ./run-test.sh
+Usage: `./run-test.sh`
 
-The test environment is used for testing this application within an integrated environment (with a reverse proxy for example). It does not stop the containers after use. To stop them run the script "./shut-down-test.sh".
+The test environment is used for testing this application within an integrated environment (with a reverse proxy for example). It does not stop the containers after use. To stop them run the script `./shut-down-test.sh`.
 
 The port used for accessing the application is 81. The network used is "test". An environment variable ENV is set with the value "test".
 
 ### Production
 
-Usage: ./run.sh
+Usage: `./run.sh`
 
-The production environment is used for final deployment to real users. It does not stop the containers after use. To stop them run the script "./shut-down.sh".
+The production environment is used for final deployment to real users. It does not stop the containers after use. To stop them run the script `./shut-down.sh`.
 
 The port used for accessing the application is 80. The network used is "prod". An environment variable ENV is set with the value "prod".
