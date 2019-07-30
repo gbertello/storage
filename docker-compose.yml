@@ -1,11 +1,9 @@
-version: '3'
+version: '3.5'
 services:
   node_prod:
     container_name: storage_node_prod
     build: node/
     restart: always
-    ports:
-      - 80:80
     environment:
       - ENV=prod
     networks:
@@ -14,4 +12,5 @@ services:
       - "./storage:/app/storage"
 networks:
   prod:
+    name: prod
     driver: bridge

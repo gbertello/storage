@@ -4,7 +4,7 @@ import unittest
 
 class NodeTest(unittest.TestCase):
   def test_can_download_document(self):
-    r = requests.get("http://host.docker.internal:82/storage/test.txt")
+    r = requests.get("http://node_local/storage/test.txt")
     self.assertEqual(r.text.strip(), "Hello World!")
 
 

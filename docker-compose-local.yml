@@ -1,10 +1,8 @@
-version: '3'
+version: '3.5'
 services:
   node_local:
     container_name: storage_node_local
     build: node/
-    ports:
-      - 82:80
     environment:
       - ENV=local
     networks:
@@ -13,4 +11,5 @@ services:
       - "./storage:/app/storage"
 networks:
   local:
+    name: local
     driver: bridge
