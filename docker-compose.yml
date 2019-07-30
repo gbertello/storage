@@ -12,5 +12,5 @@ services:
       - "./storage:/app/storage"
 networks:
   prod:
-    name: prod
-    driver: bridge
+    external:
+      name: prod

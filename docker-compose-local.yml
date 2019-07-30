@@ -11,5 +11,6 @@ services:
       - "./storage:/app/storage"
 networks:
   local:
-    name: local
-    driver: bridge
+    external:
+      name: local
+    
