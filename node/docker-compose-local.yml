@@ -1,16 +1,15 @@
-version: '3.5'
+version: '3'
 services:
   node_local:
     container_name: storage_node_local
-    build: node/
+    build: .
+    volumes:
+      - "../storage/node/local:/app/storage"
     environment:
       - ENV=local
     networks:
       - local
-    volumes:
-      - "./storage:/app/storage"
 networks:
   local:
     external:
       name: local
-    
