@@ -4,8 +4,6 @@ services:
     container_name: storage_node_prod
     build: node/
     restart: always
-    ports:
-      - 20000:80
     environment:
       - ENV=prod
     networks:
