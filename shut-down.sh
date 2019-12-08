@@ -1,3 +1,5 @@
 #!/bin/bash -ex
 
-docker-compose down
+ENV=$1
+
+docker-compose -f docker-compose-$ENV.yml down

@@ -7,4 +7,4 @@ RUN pip install \
 
 COPY app /app
 WORKDIR /app
-CMD /bin/bash
+CMD tail -f /dev/null
