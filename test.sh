@@ -1,5 +1,5 @@
-#!/bin/bash -ex
+CWD=$(cd $(dirname $0) && pwd)
 
-ENV=$1
-
-docker exec -it storage_test_$1 env TERM=xterm-256color pytest
+echo "Testing node"
+$CWD/node/test.sh
+echo ""
