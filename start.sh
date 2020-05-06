@@ -9,6 +9,7 @@ while getopts ":s:" option; do
   esac
 done
 
-echo "Starting node"
-$CWD/node/start.sh -s $SYSTEM
-echo ""
+for dir in */ ; do
+  echo "Starting ${dir%/}"
+  $CWD/$dir/start.sh -s $SYSTEM
+done

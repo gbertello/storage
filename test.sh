@@ -1,5 +1,7 @@
 CWD=$(cd $(dirname $0) && pwd)
 
-echo "Testing node"
-$CWD/node/test.sh
-echo ""
+for dir in */ ; do
+  echo "Testing ${dir%/}..."
+  $CWD/$dir/test.sh -s $SYSTEM
+  echo ""
+done
